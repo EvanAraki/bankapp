@@ -1,0 +1,176 @@
+Script started on Wed 30 Mar 2022 11:48:56 PM HST
+]0;earaki94@uhx02:~/project1[?1034huhx02:/home/e/earaki94/project1% make
+make: `project1' is up to date.
+]0;earaki94@uhx02:~/project1uhx02:/home/e/earaki94/project1% ./homework1 debugger
+bash: ./homework1: No such file or directory
+]0;earaki94@uhx02:~/project1uhx02:/home/e/earaki94/project1% ./homework1[K[K[K[K[K[K[K[K[K[K[K./project1 debugger
+error, command line misinput
+]0;earaki94@uhx02:~/project1uhx02:/home/e/earaki94/project1% ./projke[K[Kect1 debug
+
+**ENTERING DEBUG**
+
+**DEBUG** readfile. filename: database.txt
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+ad
+
+Enter the account number: 1000    1000
+
+Enter name for acount: evan
+
+Enter address(end input with a semicolon):
+line 1
+line2;
+
+**DEBUG** addRecord. accountno: 1000,  name: evan, address: line 1
+line2
+
+Record added
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+ad
+
+Enter the account number: 1000
+
+Enter name for acount: josh
+
+Enter address(end input with a semicolon):
+line    address;
+
+**DEBUG** addRecord. accountno: 1000,  name: josh, address: address
+
+Record added
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+p ad
+
+Enter the account number: 2000
+
+Enter name for acount: test1
+
+Enter address(end input with a semicolon):
+address2;
+
+**DEBUG** addRecord. accountno: 2000,  name: test1, address: address2
+
+Record added
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+pri
+
+**DEBUG** printALlRecords.
+
+**ALL RECORDS**
+***************************************************************
+1000
+evan
+line 1
+line2
+***************************************************************
+
+***************************************************************
+1000
+josh
+address
+***************************************************************
+
+***************************************************************
+2000
+test1
+address2
+***************************************************************
+
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+delete
+
+Enter the account number: 1000
+
+**DEBUG** deleteRecord. accountnum: 1000
+
+Record deleted
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+pri
+
+**DEBUG** printALlRecords.
+
+**ALL RECORDS**
+***************************************************************
+2000
+test1
+address2
+***************************************************************
+
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+find
+
+Enter the account number: 2000
+
+**DEBUG** findRecord. accountnumber: 2000
+***************************************************************
+2000
+test1
+address2
+***************************************************************
+
+
+Please select a menu option
+add: add a new record in the database
+printall: print all records in the database
+find: find record(s) with a specified account #
+delete: delete existing record(s) from the database using the account # as a key
+quit: quit the program
+
+qu
+
+**DEBUG** writefile. filename: database.txt
+
+**DEBUG** cleanup. 
+]0;earaki94@uhx02:~/project1uhx02:/home/e/earaki94/project1% exit
+exit
+
+Script done on Wed 30 Mar 2022 11:50:14 PM HST
